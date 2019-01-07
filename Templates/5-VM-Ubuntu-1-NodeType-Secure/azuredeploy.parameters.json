@@ -1,0 +1,66 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "clusterLocation": {
+        "value": "westus"
+      },
+      "clusterName": {
+        "value": "pepogors"
+      },
+      "adminUserName": {
+        "value": "testadm"
+      },
+      "adminPassword": {
+        "value": "Apple12345678!"
+      },
+      "vmImagePublisher": {
+        "value": "Canonical"
+      },
+      "vmImageOffer": {
+        "value": "UbuntuServer"
+      },
+      "vmImageSku": {
+        "value": "16.04-LTS"
+      },
+      "vmImageVersion": {
+        "value": "latest"
+      },
+      "loadBalancedAppPort1": {
+        "value": 80
+      },
+      "loadBalancedAppPort2": {
+        "value": 8081
+      },
+      "clusterProtectionLevel": {
+        "value": "EncryptAndSign"
+      },
+      "certificateStoreValue": {
+        "value": "My"
+      },
+      "certificateThumbprint": {
+        "value": "43BE30DA454D3C7DE1C5E0710E3EA10444E9F36E"
+      },
+      "sourceVaultValue": {
+        "value": "/subscriptions/eec8e14e-b47d-40d9-8bd9-23ff5c381b40/resourceGroups/pepogors-keyvault/providers/Microsoft.KeyVault/vaults/pepogors-kv"
+      },
+      "certificateUrlValue": {
+        "value": "https://pepogors-kv.vault.azure.net/secrets/pepogors-keyvault/e39263103a1a4477bb62c3ddd1382e22"
+      },
+      "storageAccountType": {
+        "value": "Standard_LRS"
+      },
+      "supportLogStorageAccountType": {
+        "value": "Standard_LRS"
+      },
+      "applicationDiagnosticsStorageAccountType": {
+        "value": "Standard_LRS"
+      },
+      "nt0InstanceCount": {
+        "value": 5
+      },
+      "vmNodeType0Size": {
+        "value": "Standard_D2_V2"
+      }
+    }
+  }
